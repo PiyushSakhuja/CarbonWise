@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CarbonWise Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container" style="display:flex;justify-content:space-between;">
+    <h1>CarbonWise</h1>
+    <button onclick="logout()" class="button">Logout</button>
+
+  </div>
+</nav>
+
+<section class="section container">
+  <div class="grid grid-3">
+    <div class="card">
+      <h3>Total Emission</h3>
+      <h2 id="totalEmission">0 kg</h2>
+    </div>
+    <div class="card">
+      <h3>Eco Score</h3>
+      <h2 id="ecoScore">0</h2>
+    </div>
+    <div class="card">
+      <h3>Total Coins</h3>
+      <h2 id="totalCoins">0</h2>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="card">
+    <h3>AI Suggestions</h3>
+    <p id="suggestions"></p>
+  </div>
+</section>
+
+<script src="js/api.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
